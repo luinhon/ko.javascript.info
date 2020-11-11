@@ -98,8 +98,8 @@ CSS `position` 프로퍼티가 설정되어있는 조상 요소가 없는 경우
 
 샘플 요소를 대상으로 `offsetWidth`와 `offsetHeight`를 계산하면 다음과 같습니다.
 
-- `offsetWidth = 390` -- 안쪽 너비(콘텐츠 너비 + 스크롤바)에 패딩(`2 * 20px`)과 테두리(`2 * 25px`)를 더한 값
-- `offsetHeight = 290` -- 전체 높이
+- `offsetWidth = 390` : 안쪽 너비(콘텐츠 너비 + 스크롤바)에 패딩(`2 * 20px`)과 테두리(`2 * 25px`)를 더한 값
+- `offsetHeight = 290` : 전체 높이
 
 ````smart header="화면에 표시되지 않는 요소의 기하 프로퍼티는 0 또는 null입니다."
 기하 프로퍼티는 오직 보이는 요소(displayed element)를 대상으로 계산됩니다.
@@ -127,8 +127,8 @@ function isHidden(elem) {
 
 샘플 예시의 프로퍼티 값은 다음과 같습니다.
 
-- `clientLeft = 25` -- 왼쪽 테두리 너비
-- `clientTop = 25` -- 위쪽 테두리 높이
+- `clientLeft = 25` : 왼쪽 테두리 너비
+- `clientTop = 25` : 위쪽 테두리 높이
 
 ![](metric-client-left-top.svg)
 
@@ -172,8 +172,8 @@ clientWidth와 clientHeight 프로퍼티는 테두리 안에 있는 영역의 �
 
 그림을 살펴봅시다.
 
-- `scrollWidth = 324` -- 수평 스크롤바가 없기 때문에 안쪽 영역 전체를 나타내는 `clientWidth`와 동일합니다.
-- `scrollHeight = 723` -- 수직 스크롤바에 가려진 부분을 포함하는 콘텐츠 영역 안쪽 전체의 높이입니다.
+- `scrollWidth = 324` : 수평 스크롤바가 없기 때문에 안쪽 영역 전체를 나타내는 `clientWidth`와 동일합니다.
+- `scrollHeight = 723` : 수직 스크롤바에 가려진 부분을 포함하는 콘텐츠 영역 안쪽 전체의 높이입니다.
 
 `scrollWidth`와 `scrollHeight`는 요소 크기를 콘텐츠가 차지하는 만큼 늘리고자 할 때 사용할 수 있습니다.
 
